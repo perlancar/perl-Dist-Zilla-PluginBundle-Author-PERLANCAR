@@ -2,3 +2,4 @@ Dist-Zilla-PluginBundle-Author-PERLANCAR-*
 .build
 *~
 nytprof*
+.DS_Store
