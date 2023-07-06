@@ -1,8 +1,12 @@
 package Dist::Zilla::PluginBundle::Author::PERLANCAR::Task;
 
+use strict;
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
+# AUTHORITY
+# DATE
+# DIST
 # VERSION
 
 use Dist::Zilla::PluginBundle::Filter;
@@ -12,7 +16,7 @@ sub configure {
 
     $self->add_bundle(Filter => {
         -bundle => '@Author::PERLANCAR',
-        -remove => [qw/PodCoverageTests PodSyntaxTests PodWeaver/],
+        -remove => [qw/PodCoverageTests PodSyntaxTests PodWeaver EnsureSQLSchemaVersionedTest/],
     });
 
     $self->add_plugins(
