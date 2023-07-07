@@ -1,8 +1,5 @@
 package Dist::Zilla::Plugin::PERLANCAR::BeforeBuild;
 
-# DATE
-# VERSION
-
 use 5.010001;
 use strict;
 use warnings;
@@ -15,6 +12,12 @@ use Module::Version 'get_version';
 with (
     'Dist::Zilla::Role::BeforeBuild',
 );
+
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
+
 sub before_build {
     my $self = shift;
 

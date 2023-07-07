@@ -1,14 +1,14 @@
 package Dist::Zilla::PluginBundle::Author::PERLANCAR::NonCPAN;
 
-# AUTHORITY
-# DATE
-# DIST
-# VERSION
-
 use Moose;
 with 'Dist::Zilla::Role::PluginBundle::Easy';
 
 use Dist::Zilla::PluginBundle::Filter;
+
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
 
 sub configure {
     my $self = shift;
