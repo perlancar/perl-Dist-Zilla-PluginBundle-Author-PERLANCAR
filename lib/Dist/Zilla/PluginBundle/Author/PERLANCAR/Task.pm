@@ -16,7 +16,7 @@ sub configure {
 
     $self->add_bundle(Filter => {
         -bundle => '@Author::PERLANCAR',
-        -remove => [qw/PodCoverageTests PodSyntaxTests PodWeaver EnsureSQLSchemaVersionedTest/],
+        -remove => [qw/PodCoverageTests PodSyntaxTests PodWeaver EnsureSQLSchemaVersionedTest Prereqs::CheckCircular/],
     });
 
     $self->add_plugins(
