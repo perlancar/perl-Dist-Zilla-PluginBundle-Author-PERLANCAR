@@ -1,7 +1,10 @@
 package Dist::Zilla::PluginBundle::Author::PERLANCAR;
 
 use Moose;
-with 'Dist::Zilla::Role::PluginBundle::Easy';
+with (
+    'Dist::Zilla::Role::PluginBundle::Easy',
+    'Dist::Zilla::Role::PluginBundle::Config::Slicer',
+);
 
 use Dist::Zilla::PluginBundle::Filter;
 
